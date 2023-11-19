@@ -1,0 +1,5 @@
+map $http_referrer $bad_referrers {
+	default			0;
+	# skids
+	"~*.*anonymousfox.*"	1;	
+}

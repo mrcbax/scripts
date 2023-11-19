@@ -1,0 +1,115 @@
+map $http_user_agent $bad_uas {
+	default				0;
+	""				1;
+	# ads bots	
+	"~*.*adstxt.*"			1;
+	"~*.*Google-Adwords-Instant.*"	1;
+	"~*.*TprAdsTxtCrawler.*"	1;
+	# generic crawlers
+	"~*.*-bot.*"			1;
+	"~*.*Barkowler.*"		1;
+	"~*.*Elisa.*"			1;
+	"~*.*Expanse.*"			1;
+	"~*.*GozleBot.*"		1;
+	"~*.*GuzzleHttp.*"		1;
+	"~*.*MauiBot.*"			1;
+	"~*.*MBCrawler.*"		1;
+	"~*.*MojeekBot.*"		1;
+	"~*.*Petal.*"			1;
+	"~*.*Scoop.*"			1;
+	"~*.*Scrapy.*"			1;
+	"~*.*zgrab.*"			1;
+	# lazy programmers
+	"~*.*crawler4j.*"		1;
+	"~*.*curl.*"			1;
+	"~*.*Dispatch.*"		1;
+	"~*.*got/9.*"			1;
+	"~*.*Go-http-client.*"		1;
+	"~*.*Go http package.*"		1;
+	"~*.*Headless.*"		1;
+	"~*.*http.rb.*"			1;
+	"~*.*Ktor Client.*"		1;
+	"~*.*Mojolicious.*"		1;
+	"Mozilla/5.0"			1;
+	"~*.*okhttp.*"			1;
+	"~*.*Postman.*"			1;
+	"~*.*python.*"			1;
+	"~*.*quic-go-HTTP.*"		1;
+	"~*.*Wget.*"			1;
+	# broken programs
+	"~*.*Test Certificate Info.*"	1;
+	# analytics companies
+	"~*.*Dataprovider.*"		1;
+	"~*.*DomainStatsBot.*"		1;
+	"~*.*MTRobot.*"			1;
+	"~*.*serpstat.*"		1;
+	"~*.*wp_is_mobile.*"		1;
+	"~*.*ZoominfoBot.*"		1;
+	# SEO bots
+	"~*.*AhrefsBot.*"		1;
+	"~*.*BLEXBot.*"			1;
+	"~*.*DataForSeoBot.*"		1;
+	"~*.*DotBot.*"			1;
+	"~*.*e\.ventures.*"		1;
+	"~*.*MJ12bot.*"			1;
+	"~*.*napoveda.*"		1;
+	"~*.*netEstate NE.*"		1;
+	"~*.*onsiteexplorer.*"		1;
+	"~*.*Semrush.*"			1;
+	"~*.*Senzam.*"			1;
+	"~*.*spbot.*"			1;
+	# spam scrapers
+	"~*.*IonCrawl.*"		1;
+	"~*.*webprosbot.*"		1;
+	# skids
+	"~*.*ALittle Client.*"		1;
+	"~*.*anonymousfox.co.*"		1;
+	"~*.*evc-batch.*"		1;
+	"~*.*gbrmss.*"			1;
+	"~*.*gobuster.*"		1;
+	"~*.*keys.*"			1;
+	"~*.*masscan.*"			1;
+	"~*.*Mozlila.*"			1;
+	"~*.*xx032_bo9vs83_2a.*"	1;
+	# security research
+	"~*.*Censys.*"			1;
+	"~*.*intelx.*"			1;
+	"~*.*l9tcpid.*"			1;
+	"~*.*lkxscan.*"			1;
+	"~*.*NetcraftSurvey.*"		1;
+	"~*.*NetSystems.*"		1;
+	"~*.*Shodan.*"			1;
+	"~*.*virustotal.*"		1;
+	# link enrichment scrapers
+	"~*.*Blackboard.*"		1;
+	"~*.*Friendica.*"		1;
+	"~*.*Pleroma.*"			1;
+	"~*.*Synapse.*"			1;
+	# machine learning scrapers
+	"~*.*Amazonbot.*"		1;
+	"~*.*bytedance.*"		1;
+	"~*.*CCBot.*"			1;
+	"~*.*centuryb\.o\.t.*"		1;
+	"~*.*chatgpt.*"			1;
+	"~*.*Claude.*"			1;
+	"~*.*Google-Extended.*"		1;
+	"~*.*GPTBot.*"			1;
+	"~*.*img2dataset.*"		1;
+	"~*.*omgili.*"			1;
+	"~*.*Spawning-AI.*"		1;
+	# census scanners
+	"~*.*InternetMeasurement.*"	1;
+	"~*.*gdnplus.*"			1;
+	"~*.*pdrlabs.*"			1;
+	"~*.*projectdiscovery.*"	1;
+	# brand protection
+	"~*.*awario.*"			1;
+	"~*.*CheckMarkNetwork.*"	1;
+	# reverse proxies
+	"~*.*LightspeedSystems.*"	1;
+	"~*.*Apache-HttpClient.*"	1;
+	# search engines
+	"~*.*Barkrowler.*"		1;
+	"~*.*panscient.*"		1;
+	#
+}
