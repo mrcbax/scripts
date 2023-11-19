@@ -5,7 +5,7 @@ use warnings;
 
 use Socket;
 
-my $filename = '/home/cbax/mc_scanner_ips_uniq_2023-09-16.lst';
+my $filename = 'ips_to_scan.lst';
 open(my $fh, '<:encoding(UTF-8)', $filename)
   or die "Could not open file '$filename' $!";
 
