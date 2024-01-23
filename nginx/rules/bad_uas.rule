@@ -45,6 +45,8 @@ map $http_user_agent $bad_uas {
 	"~*.*serpstat.*"		1;
 	"~*.*wp_is_mobile.*"		1;
 	"~*.*ZoominfoBot.*"		1;
+	# Reverse Image Search
+	"~*.*Imagesift.*"		1;
 	# SEO bots
 	"~*.*AhrefsBot.*"		1;
 	"~*.*BLEXBot.*"			1;
@@ -70,7 +72,9 @@ map $http_user_agent $bad_uas {
 	"~*.*keys.*"			1;
 	"~*.*masscan.*"			1;
 	"~*.*Mozlila.*"			1;
+	"~*.*Vore.*"			1;
 	"~*.*xx032_bo9vs83_2a.*"	1;
+	"~*.*EmailWolf.*"	        1;
 	# security research
 	"~*.*Censys.*"			1;
 	"~*.*intelx.*"			1;
