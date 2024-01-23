@@ -19,6 +19,7 @@ map $http_user_agent $bad_uas {
 	"~*.*Scoop.*"			1;
 	"~*.*Scrapy.*"			1;
 	"~*.*zgrab.*"			1;
+	"~*.*Friendly.*"	        1;
 	# lazy programmers
 	"~*.*crawler4j.*"		1;
 	"~*.*curl.*"			1;
