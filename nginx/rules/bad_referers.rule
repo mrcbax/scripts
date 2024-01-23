@@ -1,4 +1,4 @@
-map $http_referrer $bad_referrers {
+map $http_referer $bad_referers {
 	default			0;
 	# skids
 	"~*.*anonymousfox.*"	1;	

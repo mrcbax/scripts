@@ -1,0 +1,20 @@
+- name: NGiNX Filter Rules Update
+  hosts: all
+  tasks:
+    - name: Populate service facts
+      ansible.builtin.service_facts:
+    - name: Copy rules
+      when: "'nginx' in services or 'nginx.service' in services"
+      become: true
+      ansible.builtin.copy:
+        src: ./rules
+        dest: /etc/nginx
+        owner: root
+        group: root
+        mode: '0644'
+    - name: Reload NGiNX service
+      when: "'nginx' in services or 'nginx.service' in services"
+      become: true
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
