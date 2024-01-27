@@ -76,6 +76,7 @@ map $http_user_agent $bad_uas {
 	"~*.*Vore.*"			1;
 	"~*.*xx032_bo9vs83_2a.*"	1;
 	"~*.*EmailWolf.*"	        1;
+	"~*.*ELB-HealthChecker.*"	1;
 	# security research
 	"~*.*Censys.*"			1;
 	"~*.*intelx.*"			1;
