@@ -3,6 +3,7 @@ map $request $bad_paths {
 	"~*.*wp-content.*"           1;
 	"~*.*wp-includes.*"          1;
 	"~*.*wp-admin.*"             1;
+	"~*.*wlwmanifest.*"	     1;
 	"~*.*phpunit.*"              1;
 	"~*.*\.git.*"                1;
 	"~*.*\.svn.*"                1;
@@ -40,6 +41,7 @@ map $request $bad_paths {
 	"~*.*41.php.*" 1;
 	"~*.*4price.php.*" 1;
 	"~*.*777.php.*" 1;
+	"~*.*adminer.*.php.*" 1;
 	"~*.*alexus.php.*" 1;
 	"~*.*alfa123.php.*" 1;
 	"~*.*alfa.php.*" 1;
