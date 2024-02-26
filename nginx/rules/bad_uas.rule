@@ -70,6 +70,7 @@ map $http_user_agent $bad_uas {
 	"~*.*evc-batch.*"		1;
 	"~*.*gbrmss.*"			1;
 	"~*.*gobuster.*"		1;
+	"~*.*jndi.*"			1;
 	"~*.*keys.*"			1;
 	"~*.*masscan.*"			1;
 	"~*.*Mozlila.*"			1;
