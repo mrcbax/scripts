@@ -100,4 +100,6 @@
 	|| header_regexp('User-Agent', '(?i).*Apache-HttpClient.*')
 	|| header_regexp('User-Agent', '(?i).*Barkrowler.*')
 	|| header_regexp('User-Agent', '(?i).*panscient.*')
+	|| header_regexp('User-Agent', '(?i).*Minefield.*')
+	|| header_regexp('User-Agent', '(?i).*Seekport.*')
 `

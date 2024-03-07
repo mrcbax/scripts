@@ -1,7 +1,0 @@
-map $http_referer $bad_referers {
-	default			0;
-	# crypto scanners
-	"~*.*binance.com.*"	1;
-	# skids
-	"~*.*anonymousfox.*"	1;	
-}

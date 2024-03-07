@@ -1,7 +1,7 @@
 map $http_user_agent $bad_uas {
 	default				0;
 	""				1;
-	# ads bots	
+	# ads bots
 	"~*.*adstxt.*"			1;
 	"~*.*Google-Adwords-Instant.*"	1;
 	"~*.*TprAdsTxtCrawler.*"	1;
@@ -78,7 +78,7 @@ map $http_user_agent $bad_uas {
 	"~*.*xx032_bo9vs83_2a.*"	1;
 	"~*.*EmailWolf.*"	        1;
 	"~*.*ELB-HealthChecker.*"	1;
-	"~*.*NCCSoft.*			1;
+	"~*.*NCCSoft.*"			1;
 	# security research
 	"~*.*Censys.*"			1;
 	"~*.*intelx.*"			1;
@@ -119,5 +119,7 @@ map $http_user_agent $bad_uas {
 	# search engines
 	"~*.*Barkrowler.*"		1;
 	"~*.*panscient.*"		1;
-	#
+	"~*.*Seekport.*"		1;
+	# suspiciously old
+	"~*.*Minefield.*"		1;
 }
