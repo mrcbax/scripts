@@ -61,6 +61,7 @@ map $http_user_agent $bad_uas {
 	"~*.*Semrush.*"			1;
 	"~*.*Senzam.*"			1;
 	"~*.*spbot.*"			1;
+	"~*.*SISTRIX.*"			1;
 	# spam scrapers
 	"~*.*IonCrawl.*"		1;
 	"~*.*webprosbot.*"		1;
@@ -105,6 +106,8 @@ map $http_user_agent $bad_uas {
 	"~*.*img2dataset.*"		1;
 	"~*.*omgili.*"			1;
 	"~*.*Spawning-AI.*"		1;
+	"~*.*flyscrape.*"		1;
+	"~*.*FireCrawlAgent.*"		1;
 	# census scanners
 	"~*.*InternetMeasurement.*"	1;
 	"~*.*gdnplus.*"			1;

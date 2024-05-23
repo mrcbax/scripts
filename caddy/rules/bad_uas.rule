@@ -102,4 +102,6 @@
 	|| header_regexp('User-Agent', '(?i).*panscient.*')
 	|| header_regexp('User-Agent', '(?i).*Minefield.*')
 	|| header_regexp('User-Agent', '(?i).*Seekport.*')
+	|| header_regexp('User-Agent', '(?i).*SISTRIX.*')
+	|| header_regexp('User-Agent', '(?i).*FireCrawlAgent.*')
 `
