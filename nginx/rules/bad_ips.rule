@@ -16,6 +16,7 @@ geo $bad_ips {
 	213.52.128.0/23		1; #linode
 	94.156.177.0/24		1; #virutaline
 	23.158.56.0/24		1; #gthost
+	91.240.118.0/24		1; #changway
         # security scanners
         2.56.191.165		1;
 	87.236.176.0/24		1;
