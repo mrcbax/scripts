@@ -94,6 +94,7 @@ map $http_user_agent $bad_uas {
 	"~*.*Friendica.*"		1;
 	"~*.*Pleroma.*"			1;
 	"~*.*Synapse.*"			1;
+	"~*.*Friendica.*"		1;
 	# machine learning scrapers
 	"~*.*Amazonbot.*"		1;
 	"~*.*bytedance.*"		1;
@@ -108,6 +109,10 @@ map $http_user_agent $bad_uas {
 	"~*.*Spawning-AI.*"		1;
 	"~*.*flyscrape.*"		1;
 	"~*.*FireCrawlAgent.*"		1;
+	"~*.*zot.*"			1;
+	"~*.*OAI.*"			1;
+	"~*.*SearchBot.*"		1;
+	"~*.*Perplex.*"			1;		
 	# census scanners
 	"~*.*InternetMeasurement.*"	1;
 	"~*.*gdnplus.*"			1;
